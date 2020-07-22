@@ -1,0 +1,15 @@
+{% extends "layout.html" %}
+
+{% block title %}Index{% endblock %}
+
+{% block heading %}
+First Page
+{% endblock %}
+
+{% block body %}
+<form action="{{ url_for('hello') }}" method="post">
+  <input type="text" name="fname">
+  <button>Submit</button>
+</form>
+
+{% endblock %}

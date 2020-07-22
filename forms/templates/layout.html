@@ -1,0 +1,14 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>{% block title %}{% endblock %} - My Webpage</title>
+  </head>
+
+  <body>
+    <h1>{% block heading %}{% endblock %}</h1>
+
+    {% block body %}
+    <p> This paragraph is in the base template.</p>
+    {% endblock %}
+  </body>
+</html>
